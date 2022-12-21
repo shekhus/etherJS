@@ -104,20 +104,20 @@ const contractInteraction = async () =>{
     //read functions from Blockchain 
     const walletContract= new ethers.Contract (walletAddress,walletAbi,provider)
 
-    const contractName = await walletContract.name()
-    console.log("Contract Name :",contractName)
+    // const contractName = await walletContract.name()
+    // console.log("Contract Name :",contractName)
 
     const num = await walletContract.getValue()
-    console.log("num :",num)
+    console.log("num :",String(num));
 
     const contractBalance = await walletContract.contractBalance()
     
     const balanceEther = ethers.utils.formatEther(contractBalance);
     console.log("Account Balance in Ether :",balanceEther);
 
-    const userBalance = await walletContract.accountBalance('0xe5DEd5C8B695c7C0892340bb694e1280935599f6')
-    const balanceEtherUser = ethers.utils.formatEther(userBalance);
-    console.log("User Account Balance in Ether :",balanceEtherUser);
+    // const userBalance = await walletContract.accountBalance('0xe5DEd5C8B695c7C0892340bb694e1280935599f6')
+    // const balanceEtherUser = ethers.utils.formatEther(userBalance);
+    // console.log("User Account Balance in Ether :",balanceEtherUser);
  
 }
 
