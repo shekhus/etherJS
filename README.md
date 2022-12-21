@@ -14,9 +14,9 @@ create react app with name client
 npx create-react-app client 
 
 cd client
-npm start!
+npm start
 
-[image](https://user-images.githubusercontent.com/48991661/208985633-fd633021-4e22-4ad9-8449-352cc90e0e1b.png)
+![image](https://user-images.githubusercontent.com/48991661/208985633-fd633021-4e22-4ad9-8449-352cc90e0e1b.png)
 
 ![image](https://user-images.githubusercontent.com/48991661/208985681-0c916eb9-c126-4d0a-8614-0728eace5073.png)
 
